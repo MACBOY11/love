@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Gift For You 💌</title>
+  <meta name="description" content="A cute romantic gift website made just for you with love 💖" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Poppins:wght@400;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Floating hearts background container -->
+  <div id="bg-hearts" aria-hidden="true"></div>
+
+  <!-- Main Card -->
+  <div class="card" id="main-card">
+    <!-- Browser window chrome -->
+    <div class="browser-bar">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+      <span class="browser-url">💌 For Sindhu :></span>
+    </div>
+
+    <div class="card-body" id="card-body">
+      <h1 class="title">I made this website just for you 💌</h1>
+
+      <!-- Cat Illustration — replace src with your own image -->
+      <div class="cat-container" id="cat-container">
+        <img id="cat-img" src="https://cdn-icons-png.flaticon.com/512/1864/1864514.png"
+          alt="Adorable white cat holding a pink heart" class="cat-img bounce"
+          onerror="this.style.display='none';document.getElementById('cat-fallback').style.display='flex';" />
+        <div id="cat-fallback" class="cat-fallback" style="display:none;">🐱💖</div>
+      </div>
+
+      <h2 class="subtitle">PLEASE ACCEPT MY GIFT 💝</h2>
+
+      <div class="btn-row" id="btn-row">
+        <button class="btn btn-yes" id="btn-yes" onclick="onYes()">❤️ YES</button>
+        <button class="btn btn-no" id="btn-no">🙈 NO</button>
+      </div>
+
+      <p class="dodge-msg" id="dodge-msg"></p>
+    </div>
+  </div>
+
+  <!-- YES celebration overlay -->
+  <div class="overlay" id="overlay">
+    <div id="confetti-canvas" aria-hidden="true"></div>
+    <div class="celebration">
+      <div class="love-gif-container">
+        <!-- Bubu Dudu GIF — replace src with your own -->
+        <img id="bubu-img" src="https://media.tenor.com/LMsJwp_UjpgAAAAi/bubu-dudu-bubu.gif" alt="Bubu Dudu Love"
+          class="love-gif"
+          onerror="this.style.display='none';document.getElementById('bubu-fallback').style.display='flex';" />
+        <div id="bubu-fallback" class="bubu-fallback" style="display:none;">🐻🤍🐱</div>
+      </div>
+      <h1 class="celeb-title">Yay!! ❤️ I Love You So Much! 🥹💖</h1>
+      <p class="celeb-sub">Show bubu.<br />🌸💕</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
